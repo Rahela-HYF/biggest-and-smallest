@@ -10,8 +10,8 @@ function resetHandler() {
   
   // re-render UI with values saved in state
   document.getElementById('input').value = numbers.current;
-  document.getElementById('biggest').value = numbers.biggest;
-  document.getElementById('smallest').value = numbers.smallest; 
+  document.getElementById('biggest').innerHTML = numbers.biggest;
+  document.getElementById('smallest').innerHTML = numbers.smallest; 
   // log interaction: handler name, new state
   log.push({
     handler: 'reset',

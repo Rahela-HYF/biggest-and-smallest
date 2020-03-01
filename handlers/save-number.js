@@ -8,14 +8,14 @@ function saveNumberHandler() {
  // const newCurrent = numbers.current;
 
   // find the new biggest and smallest values
-  if(current >= 0){
+  if(current >= numbers.biggest){
   numbers.biggest = current;
   numbers.smallest = numbers.smallest;
 
 /*  numbers.push(numbers.biggest);
   numbers.biggest = newBiggest;*/
     
-  }else if(current < 0){
+  }else if(current < numbers.smallest){
     numbers.smallest = current;
     numbers.biggest = numbers.biggest;
 
